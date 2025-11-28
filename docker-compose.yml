@@ -5,13 +5,18 @@ services:
     image: postgres:15-alpine
     container_name: mercenary_db
     ports:
-      - '5432:5432'
+      - '5435:5432' # Host Port 5435 -> Container Port 5432
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: password123
       POSTGRES_DB: mercenary_api
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin -d mercenary_api"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
     restart: always
 
 volumes:
