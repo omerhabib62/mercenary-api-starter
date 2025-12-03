@@ -1,4 +1,4 @@
-[![Production Build Check](https://github.com/omerhabib62/mercenary-api-starter/actions/workflows/production-ci.yml/badge.svg?event=check_suite)](https://github.com/omerhabib62/mercenary-api-starter/actions/workflows/production-ci.yml)
+[![Production Build Check](https://github.com/omerhabib62/mercenary-api-starter/actions/workflows/production-ci.yml/badge.svg)](https://github.com/omerhabib62/mercenary-api-starter/actions/workflows/production-ci.yml)
 
 ---
 
