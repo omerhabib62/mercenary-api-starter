@@ -29,5 +29,8 @@ jobs:
     - name: Build Application
       run: npm run build
       
-    - name: Run Unit Tests (Optional - If you have them)
+    - name: Run Unit Tests
+      # We inject a dummy key here so the Stripe Service can initialize without crashing.
+      env:
+        STRIPE_SECRET_KEY: sk_test_mock_ci_key_12345
       run: npm run test
