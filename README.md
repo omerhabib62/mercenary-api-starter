@@ -2,6 +2,8 @@
 
 A battle-tested NestJS boilerplate designed for speed, security, and scalability. Unlike standard templates, this engine comes pre-configured with the "Day 1" essentials required for high-compliance financial and data applications.
 
+[![Production Build Check](https://github.com/omerhabib62/mercenary-api-starter/actions/workflows/production-ci.yml/badge.svg?event=check_suite)](https://github.com/omerhabib62/mercenary-api-starter/actions/workflows/production-ci.yml)
+
 ---
 
 ## ⚡️ Core Capabilities
